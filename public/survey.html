@@ -40,14 +40,15 @@
 
         <div class="card-panel left-align white">
             <h5>
-              <i class="small material-icons left" style="color:#ff7043">portrait</i>  <strong style="color:#ff7043">About You</strong>
+              <i class="small material-icons left" style="color:#ff7043">portrait</i>  <strong style="color:#ff7043">About You:</strong>
             </h5>
             <br>
-            <input id="name" type="text" class="validate" required>
+            <input id="name" type="text" class="validate" required><i class="small material-icons left" style="color:#ff7043">mode_edit</i>
             <label class='active' for="name">Name (required)</label>
-            <input id="photo" type="text" class="validate" required>
+            <input id="photo" type="text" class="validate" required><i class="small material-icons left" style="color:#ff7043">monochrome_photos</i>
             <label class='active' for="name">Link to Photo Image (required)</label>
-            <br>
+            <br><br>
+            <br><br>
             <h5>
                 <i class="material-icons left" style="color:#ff7043">filter_vintage</i>
                 <strong style="color:#ff7043">Question 1:</strong>
@@ -119,6 +120,69 @@
                 <option value="5">5 (Strongly Agree)</option>
             </select>
             <br><br>
+
+            <h5>
+                <i class="material-icons left" style="color:#ff7043">filter_vintage</i>
+                <strong style="color:#ff7043">Question 6:</strong>
+            </h5>
+            <p>You would rather improvise than spend time coming up with a detailed plan.</p>
+            <select data-placeholder="" class="browser-default" id="q1">
+                <option value="">Choose an option</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+            <br>
+            <br>
+            <h5>
+                <i class="material-icons left" style="color:#ff7043">filter_vintage</i>
+                <strong style="color:#ff7043">Question 7:</strong>
+            </h5>
+            <p>It does not take you much time to start getting involved in social activities at your new workplace.</p>
+            <select data-placeholder="" class="browser-default" id="q1">
+                <option value="">Choose an option</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+            <br>
+            <br>
+
+            <h5>
+                <i class="material-icons left" style="color:#ff7043">filter_vintage</i>
+                <strong style="color:#ff7043">Question 8:</strong>
+            </h5>
+            <p>You do not let other people influence your actions</p>
+            <select data-placeholder="" class="browser-default" id="q1">
+                <option value="">Choose an option</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+            <br>
+            <br>
+
+            <h5>
+                <i class="material-icons left" style="color:#ff7043">filter_vintage</i>
+                <strong style="color:#ff7043">Question 9:</strong>
+            </h5>
+            <p>If someone does not respond to your e-mail quickly, you start worrying if you said something wrong.</p>
+            <select data-placeholder="" class="browser-default" id="q1">
+                <option value="">Choose an option</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+            <br>
+            <br>
             <br>
             
             <button type="submit" data-target="modal1" class="waves-effect waves-light btn modal-trigger deep-orange accent-3" id="submitBtn">
@@ -133,7 +197,7 @@
         </div>
         <div class='col s4'>
             <p>
-                <a href="../public/home.html" target="_blank">Home</a>||
+                <a href="../public/home.html" target="_blank">Home</a>|<a href='../api/friends'>API Friends List</a>|
                 <a href='https://github.com/celinazara/FriendFinder' target='_blank'>GitHub: FriendFinder</a>
             </p>
         </div>
@@ -148,7 +212,7 @@
         <div class="modal-footer">
             <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Done</a>
         </div>
-        
+
     <script type="text/javascript">
         $(document).ready(function () {
             $("#submitBtn").on("click", function () {
